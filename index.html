@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cadastro de Contatos</title>
+    <link rel="stylesheet" href="style.css"> </head>
+<body>
+    <div class="container">
+        <h1>📞 Lista de Contatos</h1>
+
+        <form id="contactForm">
+            <div class="input-group">
+                <label for="nome">Nome:</label>
+                <input type="text" id="nome" required>
+            </div>
+            <div class="input-group">
+                <label for="telefone">Telefone:</label>
+                <input type="text" id="telefone" required pattern="[0-9\s\-()]+" title="Apenas números, parênteses, hífens e espaços são permitidos.">
+            </div>
+            <button type="submit">Cadastrar Contato</button>
+        </form>
+
+        <hr>
+
+        <table id="contactTable">
+            <thead>
+                <tr>
+                    <th>Nome</th>
+                    <th>Telefone</th>
+                </tr>
+            </thead>
+            <tbody>
+                </tbody>
+        </table>
+    </div>
+
+    <script src="script.js"></script> </body>
+</html>
